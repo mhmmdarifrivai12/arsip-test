@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
+            <i class="fa fa-folder-open"></i>
             Kategori
             <small>Arsip 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">
@@ -51,8 +48,8 @@
                                         <td><?= $no++; ?></td>
                                         <td><?= $value['nama_kategori']; ?></td>
                                         <td class="text-center">
-                                            <button class="btn btn-xs btn-warning" data-toggle="modal" data-target="#edit<?= $value['id_kategori']; ?>">Edit</button>
-                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kategori']; ?>">Delete</button>
+                                            <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#edit<?= $value['id_kategori']; ?>"><i class="fa fa-pencil-square-o"></i> Edit</button>
+                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_kategori']; ?>"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
                                 <?php } ?>
@@ -124,7 +121,9 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-primary">
+                            <li class="fa fa-save"></li> Save
+                        </button>
                     </div>
                     <?php echo form_close() ?>
                 </div>

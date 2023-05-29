@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
-            User
-            <small>Arsip 2023</small>
+            <i class="fa fa-file-text-o"></i>
+            Review Document
+            <small>arsipp 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">

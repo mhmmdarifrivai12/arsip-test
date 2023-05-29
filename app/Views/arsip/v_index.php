@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
-            User
-            <small>Arsip 2023</small>
+            <i class="fa fa-file-text-o"></i>
+            Document Masuk
+            <small>arsipp 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">
@@ -67,8 +64,8 @@
                                         </td>
                                         <td class="text-center">
 
-                                            <a href="<?= base_url('arsip/edit/' . $value['id_arsip']) ?>" class="btn btn-xs btn-warning">Edit</a>
-                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_arsip']; ?>">Delete</button>
+                                            <a href="<?= base_url('arsip/edit/' . $value['id_arsip']) ?>" class="btn btn-xs btn-success"><i class="fa fa-pencil-square-o"></i> Edit</a>
+                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_arsip']; ?>"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
                                 <?php } ?>

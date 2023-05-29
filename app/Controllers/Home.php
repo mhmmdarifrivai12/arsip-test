@@ -18,9 +18,11 @@ class Home extends BaseController
         $data = array(
             'title' => 'Home',
             'tot_arsip' => $this->Model_home->tot_arsip(),
+            'tot_arsipp' => $this->Model_home->tot_arsipp(),
             'tot_dep' => $this->Model_home->tot_dep(),
             'tot_user' => $this->Model_home->tot_user(),
             'tot_kategori' => $this->Model_home->tot_kategori(),
+            'total' => $this->Model_home->total(),
             'isi'    => 'v_home'
         );
         return view('layout/v_wrapper', $data);

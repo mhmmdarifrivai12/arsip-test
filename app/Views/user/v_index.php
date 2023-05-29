@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
+            <i class="fa fa-user"></i>
             User
             <small>Arsip 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">
@@ -68,8 +65,8 @@
                                         <td><img src="<?= base_url('foto/' . $value['foto']) ?>" width="40px"></td>
                                         <td class="text-center">
 
-                                            <a href="<?= base_url('user/edit/' . $value['id_user']) ?>" class="btn btn-xs btn-success"><i class="fa fa-pencil-square-o"></i></a>
-                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_user']; ?>"><i class="fa fa-trash"></i></button>
+                                            <a href="<?= base_url('user/edit/' . $value['id_user']) ?>" class="btn btn-xs btn-success"><i class="fa fa-pencil-square-o"> Edit</i></a>
+                                            <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete<?= $value['id_user']; ?>"><i class="fa fa-trash"></i> Delete</button>
                                         </td>
                                     </tr>
                                 <?php    } ?>

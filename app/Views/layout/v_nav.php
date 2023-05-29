@@ -30,7 +30,19 @@
                     <li><a href="<?= base_url('kategori') ?>"><i class="fa fa-folder-open"></i> <span>Data Kategori</span></a></li>
                     <li><a href="<?= base_url('departemen') ?>"><i class="fa  fa-building"></i> <span>Departemen</span></a></li>
                     <li><a href="<?= base_url('user') ?>"><i class="fa fa-user"></i> <span>Data Admin</span></a></li>
-                    <li><a href="<?= base_url('arsip') ?>"><i class="fa  fa-file"></i> <span>Data Arsip</span></a></li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa  fa-file"></i>
+                            <span>Arsip</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="<?= base_url('arsip') ?>"><i class="fa fa-circle-o"></i> Surat Masuk</a></li>
+                            <li><a href="<?= base_url('arsipp') ?>"><i class="fa fa-circle-o"></i> Surat Keluar</a></li>
+                        </ul>
+                    </li>
                     <li><a href="<?= base_url('auth/logout') ?>"><i class="fa fa-sign-out"></i> <span>Keluar</span></a></li>
 
                 </ul>

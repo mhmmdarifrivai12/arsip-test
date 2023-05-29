@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
+            <i class="fa fa-user"></i>
             Add User
             <small>Arsip 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">
@@ -85,7 +82,9 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="sumbit" class="btn btn-primary">Simpan</button>
+                            <button type="sumbit" class="btn btn-primary">
+                                <li class="fa fa-save"></li> Save
+                            </button>
                             <a href="<?= base_url('user') ?>" class="btn btn-success">Kembali</a>
 
                         </div>

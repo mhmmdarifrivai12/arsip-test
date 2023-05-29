@@ -7,9 +7,7 @@
                 Dashboard
                 <small>Arsip 2023</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-            </ol>
+
         </section>
 
         <!-- Main content -->
@@ -17,69 +15,81 @@
             <div class="row">
 
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-teal">
-                        <div class="inner">
-                            <h4>Admin</h4>
-                            <h3><?= $tot_user ?></h3>
+                <div class="col-lg-1 col-xs-3">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-red"><i class="fa fa-users"></i></span>
 
-                            <div class="icon">
-                                <i class="fa fa-users"></i>
-                            </div>
+                        <div class="info-box-content">
+                            <span class="info-box-text" style="font-weight: bold;">Admin</span>
+                            <span class="info-box-number"><?= $tot_user ?></span>
+                            <a href="<?= base_url('user') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+
+
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <!-- /.info-box-content -->
                     </div>
+                    <!-- /.info-box -->
                 </div>
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-teal">
-                        <div class="inner">
-                            <h4>Kategori</h4>
-                            <h3><?= $tot_kategori ?></h3>
+                <div class="col-lg-3 col-xs-3">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-green"><i class="fa fa-folder-open-o"></i></span>
 
-                            <div class="icon">
-                                <i class="fa fa-users"></i>
-                            </div>
+                        <div class="info-box-content">
+                            <span class="info-box-text" style="font-weight: bold;">Kategori</span>
+                            <span class="info-box-number"><?= $tot_kategori ?></span>
+                            <a href="<?= base_url('kategori') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <!-- /.info-box-content -->
                     </div>
+                    <!-- /.info-box -->
                 </div>
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-teal">
-                        <div class="inner">
-                            <h4>Arsip</h4>
-                            <h3><?= $tot_arsip ?></h3>
+                <div class="col-lg-3 col-xs-3">
+                    <div class="info-box">
+                        <span class="icon info-box-icon bg-aqua"><i class="fa fa-file-o"></i></span>
 
-                            <div class="icon">
-                                <i class="fa fa-users"></i>
-                            </div>
+                        <div class="info-box-content">
+                            <span class="info-box-text" style="font-weight: bold;">Surat Masuk</span>
+                            <span class="info-box-number"><?= $tot_arsip ?></span>
+                            <a href="<?= base_url('arsip') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <!-- /.info-box-content -->
                     </div>
+                    <!-- /.info-box -->
                 </div>
 
-                <div class="col-lg-3 col-xs-6">
-                    <!-- small box -->
-                    <div class="small-box bg-teal">
-                        <div class="inner">
-                            <h4>Departemen</h4>
-                            <h3><?= $tot_dep ?></h3>
+                <div class="col-lg-3 col-xs-3">
+                    <div class="info-box">
+                        <span class="icon info-box-icon bg-blue"><i class="fa fa-file-o"></i></span>
 
-                            <div class="icon">
-                                <i class="fa fa-signal"></i>
-                            </div>
+                        <div class="info-box-content">
+                            <span class="info-box-text" style="font-weight: bold;">Surat Keluar</span>
+                            <span class="info-box-number"><?= $tot_arsipp ?></span>
+                            <a href="<?= base_url('arsipp') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        <!-- /.info-box-content -->
                     </div>
+                    <!-- /.info-box -->
                 </div>
 
 
+                <div class="col-lg-3 col-xs-3">
+                    <div class="info-box">
+                        <span class="icon info-box-icon bg-yellow"><i class="fa fa-signal"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text" style="font-weight: bold;">Departemen</span>
+                            <span class="info-box-number"><?= $tot_dep ?></span>
+                            <a href="<?= base_url('departemen') ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
 
 
+                <!-- /.col -->
             </div>
 
         </section>

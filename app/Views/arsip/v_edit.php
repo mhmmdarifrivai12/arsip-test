@@ -3,13 +3,10 @@
     <section class="content-header ">
 
         <h1>
-            <i class="fa fa-dashboard"></i>
-            Edit User
-            <small>Arsip 2023</small>
+            <i class="fa fa-file-text-o"></i>
+            Edit Document
+            <small>arsipp 2023</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard" style=" font-weight: bold;"></i> Dashboard</a> / <a>Home</a></li>
-        </ol>
     </section>
 
     <section class="content">
@@ -42,7 +39,7 @@
 
                         <div class="form-group">
                             <label>No Document</label>
-                            <input name="no_arsip" class="form-control" value="<?= $arsip['no_arsip']; ?>" readonly>
+                            <input name="no_arsip" class="form-control" value="<?= $arsip['no_arsip']; ?>">
                         </div>
 
                         <div class="form-group">
