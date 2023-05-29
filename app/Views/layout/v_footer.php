@@ -7,12 +7,11 @@
 <footer class="main-footer" style="text-align:center;">
     <div class="container">
         <div class="pull-right hidden-xs">
-            <!-- <b>Version</b> 2.4.18 -->
+            <b>Version</b> 2.4.18
         </div>
         <strong>Copyright &copy; 2023 <a href="#">AdminTekno</a>.</strong> All rights
         reserved.
     </div>
-    <!-- /.container -->
 </footer>
 </div>
 <!-- ./wrapper -->
@@ -33,6 +32,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url() ?>/template/dist/js/demo.js"></script>
 <!-- page script -->
+<script src="<?= base_url() ?>/js/calender.js"></script>
 <script>
     $(function() {
         $('#example1').DataTable()
