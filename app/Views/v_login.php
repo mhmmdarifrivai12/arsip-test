@@ -28,23 +28,102 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <style>
         body {
-            background-color: #B0E0E6;
-            background-repeat: no-repeat;
+            background: url('foto/background.jpg') no-repeat center center fixed;
+            overflow: hidden;
             background-size: cover;
+        }
+
+        .navbar {
+            background-color: transparent;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .navbar a {
+            font-size: 3rem;
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .log-box {
+            margin-inline: 45rem;
+        }
+
+        .navbar .logo {
+            float: left;
+        }
+
+        .login-box-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.41);
+            -webkit-box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.41);
+            -moz-box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.41);
+        }
+
+        .l-head {
+            display: flex;
+            flex-direction: column;
+            max-width: 240px;
+            margin: 0 auto;
+            float: left;
+        }
+
+        .uti {
+            text-align: center;
+            color: #D8AA07;
+            font-weight: bold;
+            font-size: 2.4rem;
+        }
+
+        .uti i {
+            color: #635279;
+            font-style: normal;
+        }
+
+        .gin {
+            text-align: center;
+            font-size: large;
+            margin: 0 auto;
+        }
+
+        .line {
+            display: block;
+            background-color: #004131;
+            margin-block: 1rem;
+            height: 1.6px;
+            width: 100%;
         }
     </style>
 </head>
 
 <body class="hold-transition ">
 
-    <div class="login-box">
-        <div class="login-logo">
-            <a href="<?= base_url() ?>"><b>Arsip</b>Tekno</a>
-        </div>
-        <!-- /.login-logo -->
-        <div class="login-box-body bg-gray-light" style="border-radius: 10px;">
-            <h3 class="" style="font-weight: bold; padding-bottom: 2px">Masuk</h3>
+    <div class="navbar">
+        <a class="logo" href="#"><img src="foto/uti.png" width="60" alt="Logo"></a>
+        <a href="#"><b> Arsip Teknokrat </b></a>
+        <!-- Tambahkan menu lainnya sesuai kebutuhan -->
+    </div>
 
+    <div class="log-box">
+        <!-- <div class="login-logo">
+            <a href="<"><b>Arsip</b>Tekno</a>
+        </div> -->
+        <!-- /.login-logo -->
+        <div class="login-box-body" style="border-radius: 10px;">
+            <div class="l-head">
+                <h3 class="uti">Universitas <i>Teknokrat</i> <i style="color:#5403FF">Indonesia</i></h3>
+                <span class="line"></span>
+                <h3 class="gin">Please Login</h3>
+                <span class="line"></span>
+            </div>
 
             <div class="row " style="margin-top: -30px;">
                 <div class="col-xs-8">
@@ -54,9 +133,9 @@
                     </div>
                 </div>
                 <!-- /.col -->
-                <div class="col-xs-4">
+                <!-- <div class="col-xs-4">
                     <h3><i class="fa fa-qrcode" style="margin-left: 50px; "></i></h3>
-                </div>
+                </div> -->
                 <!-- /.col -->
             </div>
 
@@ -83,20 +162,21 @@
             ?>
             <?php echo form_open('auth/login') ?>
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="Email/Nomor Telepon" name="email" style="border-width: 2px; border-color: cyan; border-radius: 10px;">
+                <label for="username" style="color: black;">Username</label>
+                <input type="text" class="form-control" placeholder="Email/Nomor Telepon" name="email" style="border-width: 1.5px; border-color: gray; border-radius: 10px;">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" placeholder="Password" name="password" style="border-width: 2px; border-color: cyan; border-radius: 10px;">
+                <label for="password" style="color: black;">Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="password" style="border-width: 1.5px; border-color: gray; border-radius: 10px;">
                 <span class=" glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
 
             <div class="social-auth-links text-center">
-                <button type="submit" class="btn btn-block btn-flat" style="border-width: 2px; border-color: cyan; border-radius: 10px;">Masuk</button>
+                <button type="submit" class="btn btn-block btn-flat" style="background-color: #5403FF; border-width: 2px; border-radius: 10px; color: white; margin-block:2rem;">Login</button>
             </div>
             <!-- /.social-auth-links -->
-
-            <a href="#">Lupa Password?</a><br>
+            <a href="#" style="color: #9766FF; text-align: center; display: flex; padding-left: 120px;">Lupa Password?</a><br>
 
             <?php echo form_close() ?>
         </div>

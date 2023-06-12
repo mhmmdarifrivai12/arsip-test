@@ -149,6 +149,27 @@
             </button>
         </div>
 
+        <!-- <div class="col-sm-6 text-center">
+            <label class="label label-success">Area Chart</label>
+            <div id="area-chart"></div>
+        </div>
+        <div class="col-sm-6 text-center">
+            <label class="label label-success">Line Chart</label>
+            <div id="line-chart"></div>
+        </div> -->
+        <div class="col-sm-6 text-center">
+            <label class="label label-success">Bar Chart</label>
+            <div id="bar-chart"></div>
+        </div>
+        <!-- <div class="col-sm-6 text-center">
+            <label class="label label-success">Bar stacked</label>
+            <div id="stacked"></div>
+        </div> -->
+        <!-- <div class="col-sm-6 col-sm-offset-3 text-center">
+            <label class="label label-success">Pie Chart</label>
+            <div id="pie-chart"></div>
+        </div> -->
+
         <div class="contact-form">
             <form>
                 <label for="name">Nama:</label>
@@ -163,27 +184,6 @@
                 <input type="submit" value="Kirim">
             </form>
         </div>
-
-        <div class="col-sm-6 text-center">
-            <label class="label label-success">Area Chart</label>
-            <div id="area-chart"></div>
-        </div>
-        <div class="col-sm-6 text-center">
-            <label class="label label-success">Line Chart</label>
-            <div id="line-chart"></div>
-        </div>
-        <div class="col-sm-6 text-center">
-            <label class="label label-success">Bar Chart</label>
-            <div id="bar-chart"></div>
-        </div>
-        <div class="col-sm-6 text-center">
-            <label class="label label-success">Bar stacked</label>
-            <div id="stacked"></div>
-        </div>
-        <!-- <div class="col-sm-6 col-sm-offset-3 text-center">
-            <label class="label label-success">Pie Chart</label>
-            <div id="pie-chart"></div>
-        </div> -->
 
         <script>
             var data = [{
@@ -255,15 +255,15 @@
                     pointStrokeColors: ['black'],
                     lineColors: ['gray', 'red']
                 };
-            config.element = 'area-chart';
-            Morris.Area(config);
-            config.element = 'line-chart';
-            Morris.Line(config);
+            // config.element = 'area-chart';
+            // Morris.Area(config);
+            // config.element = 'line-chart';
+            // Morris.Line(config);
             config.element = 'bar-chart';
             Morris.Bar(config);
-            config.element = 'stacked';
-            config.stacked = true;
-            Morris.Bar(config);
+            // config.element = 'stacked';
+            // config.stacked = true;
+            // Morris.Bar(config);
             Morris.Donut({
                 element: 'pie-chart',
                 data: [{
